@@ -34,7 +34,7 @@ wc -l tmp.merge.bedGraph >> out
 echo deleting the minus sign from read count obtained from minus strand...
 echo adding the count reads of plus and minus strand...
 
-Rscript RemoveMinus_GetSum.R # check the output. Its wc -l should be equal to merge file 
+Rscript RGetAbsoluteValue.R # check the output. Its wc -l should be equal to merge file 
 
 echo -e "line count of ${NAMES}.Output.bedGraph is:\n"
 wc -l Output.bedGraph >> out
